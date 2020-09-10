@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<SinaWeibo Id="1" SortId="1" AppKey="2886818237" AppSecret="3f31fef67d6bbfa7a51ea8cfbc36f2cf" ShareByAppClient="true" Enable="true" RedirectUrl="http://www.jlhmsh.com" />
+<TencentWeibo Enable="false" />
+<Douban Enable="false" />
+<QZone Id="3" SortId="3" AppId="1109786854" AppKey="0VayzFIt9quGQ0Bv" ShareByAppClient="true" Enable="true" />
+<Renren Enable="false" />
+<KaiXin Enable="false" />
+<Facebook Enable="false" />
+<Twitter Enable="false" />
+<Evernote Enable="false" />
+<FourSquare Enable="false" />
+<GooglePlus Enable="false" />
+<Instagram Enable="false" />
+<LinkedIn Enable="false" />
+<Tumblr Enable="false" />
+<Email Enable="false" />
+<ShortMessage Enable="false" />
+<Wechat Id="4" SortId="4" AppId="wxada57b82e3e68827" AppSecret="bfe7d204fb8832e74834f55ddf71905b" BypassApproval="false" Enable="true" />
+<WechatMoments Id="5" SortId="5" AppId="wxada57b82e3e68827" AppSecret="bfe7d204fb8832e74834f55ddf71905b" BypassApproval="false" Enable="true" />
+<QQ Id="2" SortId="2" AppId="1109786854" AppKey="0VayzFIt9quGQ0Bv" ShareByAppClient="true" Enable="true" />
+<Instapaper Enable="false" />
+<Pocket Enable="false" />
+<YouDao Enable="false" />
+<Pinterest Enable="false" />
+<Flickr Enable="false" />
+<Dropbox Enable="false" />
+<VKontakte Enable="false" />
+<WechatFavorite Enable="false" />
+<Yixin Enable="false" />
+<YixinMoments Enable="false" />
+<Mingdao Enable="false" />
+<Line Enable="false" />
+<WhatsApp Enable="false" />
+<KakaoTalk Enable="false" />
+<KakaoStory Enable="false" />
+<FacebookMessenger Enable="false" />
+<Alipay Enable="false" />
+<AlipayMoments Enable="false" />
+<Dingding Enable="false" />
+<Youtube Enable="false" />
+<Meipai Enable="false" />
+<Telegram Enable="false" />
+<Cmcc Enable="false" />
+<Reddit Enable="false" />
+<Telecom Enable="false" />
+<Accountkit Enable="false" />
+<Douyin Enable="false" />
+<Wework Enable="false" />
+<HWAccount Enable="false" />
+<Oasis Enable="false" />
+<XMAccount Enable="false" />
+<SnapChat Enable="false" />
+<Kuaishou Enable="false" />
+<Littleredbook Enable="false" />
+<Watermelonvideo Enable="false" />
+</DevInfor>

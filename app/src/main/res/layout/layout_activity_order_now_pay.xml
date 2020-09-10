@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qubuyer.customview.OverSrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_49"
+        android:fillViewport="true">
+
+        <com.qubuyer.business.payment.view.SOPayListView
+            android:id="@+id/v_pay_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.qubuyer.customview.OverSrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_49"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_pay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF681D"
+                android:textSize="@dimen/dp_14"
+                tools:text="实付款：¥4890" />
+
+            <TextView
+                android:id="@+id/tv_over_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textColor="#999999"
+                android:textSize="@dimen/dp_12"
+                tools:text="距订单关闭还有59分钟" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_now_pay"
+            android:layout_width="@dimen/dp_96"
+            android:layout_height="@dimen/dp_49"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="0dp"
+            android:background="#FF681D"
+            android:gravity="center"
+            android:text="去支付"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</FrameLayout>
+

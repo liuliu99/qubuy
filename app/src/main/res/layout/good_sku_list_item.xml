@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/skuKeyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginStart="@dimen/dp_15"
+        android:textColor="@color/common_black_color"
+        android:textSize="@dimen/dp_14" />
+
+    <!--<com.hebei.emall.opt.utils.FlowTagLayout-->
+        <!--android:id="@+id/skuValueListFlowLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/_5dp" />-->
+
+    <am.widget.wraplayout.WrapLayout
+        android:id="@+id/skuValueListFlowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:focusable="false"
+        android:descendantFocusability="beforeDescendants" />
+
+    <!--<com.hebei.emall.ui.customeview.FlowLayout-->
+        <!--android:id="@+id/skuValueListFlowLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:focusable="false"-->
+        <!--android:descendantFocusability="beforeDescendants" />-->
+</LinearLayout>

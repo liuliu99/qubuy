@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/addsubutils_add_sub_bg"
+    android:divider="@drawable/divider_horizontal"
+    android:orientation="horizontal">
+
+    <com.qubuyer.customview.ImageViewAutoLoad
+        android:id="@+id/ic_minus"
+        android:layout_width="@dimen/dp_27"
+        android:layout_height="@dimen/dp_22"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        app:iva_src="@drawable/addsubutils_ic_minus"
+        tools:src="@drawable/addsubutils_ic_minus" />
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_22"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="@dimen/dp_65"
+        android:singleLine="true"
+        android:text="1"
+        android:textColor="@color/addsubutils_text"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/dp_15" />
+
+    <com.qubuyer.customview.ImageViewAutoLoad
+        android:id="@+id/ic_plus"
+        android:layout_width="@dimen/dp_27"
+        android:layout_height="@dimen/dp_22"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        app:iva_src="@drawable/addsubutils_ic_plus"
+        tools:src="@drawable/addsubutils_ic_plus" />
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_10">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_95"
+        android:layout_marginEnd="@dimen/dp_13"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <com.qubuyer.customview.ImageViewAutoLoad
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/dp_82"
+            android:layout_height="@dimen/dp_82"
+            tools:src="@mipmap/ic_logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_82"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_toEndOf="@+id/iv_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#333333"
+                android:textSize="@dimen/dp_13"
+                tools:text="格力京逸（GREE）正1.5匹 E享舒适 智能睡眠 变频 快速冷暖 壁挂式卧室空调挂机..." />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/dp_19">
+
+                <TextView
+                    android:id="@+id/tv_good_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#444444"
+                    android:textSize="@dimen/dp_13"
+                    tools:text="￥1380.00" />
+
+                <TextView
+                    android:id="@+id/tv_dis_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_13"
+                    android:layout_toEndOf="@+id/tv_good_price"
+                    android:textColor="#FF681D"
+                    android:textSize="@dimen/dp_12"
+                    tools:text="折让：66.9" />
+
+                <com.qubuyer.customview.ImageViewAutoLoad
+                    android:id="@+id/iv_add_shop_cart"
+                    android:layout_width="@dimen/dp_24"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:iva_src="@drawable/icon_mine_collect_add_shop_cart"
+                    tools:src="@drawable/icon_mine_collect_add_shop_cart" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#FF681D"
+        android:gravity="center"
+        android:text="分享"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_13" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#FFA71D"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_13" />
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

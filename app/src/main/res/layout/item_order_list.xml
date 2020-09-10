@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_8"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginEnd="@dimen/dp_16">
+
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textColor="#666666"
+            android:textSize="@dimen/dp_13"
+            tools:text="订单编号:75449878" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FF681D"
+            android:textSize="@dimen/dp_12"
+            tools:text="待付款" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_one_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="#F5F5F5"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5">
+
+        <com.qubuyer.customview.ImageViewAutoLoad
+            android:id="@+id/iv_good_img"
+            android:layout_width="@dimen/dp_69"
+            android:layout_height="@dimen/dp_69"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_15"
+            tools:src="@drawable/icon_default_headimg" />
+
+        <TextView
+            android:id="@+id/tv_good_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_9"
+            android:layout_toStartOf="@+id/ll_right_price"
+            android:layout_toEndOf="@+id/iv_good_img"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#333333"
+            android:textSize="@dimen/dp_12"
+            tools:text="格力京逸（GREE）正1.5匹 定速 冷暖分体式 立享舒适 智能睡眠 壁挂式卧室..." />
+
+        <LinearLayout
+            android:id="@+id/ll_right_price"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_69"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:gravity="end|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_good_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:textSize="@dimen/dp_10"
+                tools:text="¥1999" />
+
+            <TextView
+                android:id="@+id/tv_good_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:textColor="#999999"
+                android:textSize="@dimen/dp_10"
+                tools:text="x1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_more_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="#F5F5F5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_good_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_good_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:gravity="end|center_vertical"
+        android:textSize="@dimen/dp_12"
+        tools:text="共1件商品，总金额：¥1999" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_overtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_toStartOf="@+id/ll_right_btn"
+            android:textColor="#999999"
+            android:textSize="@dimen/dp_11"
+            tools:text="23小时后订单关闭" />
+
+        <LinearLayout
+            android:id="@+id/ll_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_right_four_btn"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/shape_order_list_right_two_btn"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:textColor="#666666"
+                android:textSize="@dimen/dp_12"
+                tools:text="取消" />
+
+            <TextView
+                android:id="@+id/tv_right_three_btn"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/shape_order_list_right_two_btn"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:textColor="#666666"
+                android:textSize="@dimen/dp_12"
+                tools:text="取消" />
+
+            <TextView
+                android:id="@+id/tv_right_two_btn"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/shape_order_list_right_two_btn"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:textColor="#666666"
+                android:textSize="@dimen/dp_12"
+                tools:text="取消" />
+
+            <TextView
+                android:id="@+id/tv_right_one_btn"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/shape_order_list_right_one_btn"
+                android:gravity="center"
+                android:textColor="#FF681D"
+                android:textSize="@dimen/dp_12"
+                tools:text="去支付" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

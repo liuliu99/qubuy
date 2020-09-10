@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginBottom="@dimen/dp_49" />
+
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_49"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_5"
+        android:splitMotionEvents="false">
+
+        <RadioButton
+            android:id="@+id/rbtn_home"
+            style="@style/StyleHomeRbtn"
+            android:drawableTop="@drawable/selector_main_bttom_home_status_bar"
+            android:gravity="center"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rbtn_category"
+            style="@style/StyleHomeRbtn"
+            android:drawableTop="@drawable/selector_main_bttom_category_status_bar"
+            android:gravity="center"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/rbtn_shopping"
+            style="@style/StyleHomeRbtn"
+            android:drawableTop="@drawable/selector_main_bttom_shopping_status_bar"
+            android:gravity="center"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rbtn_mine"
+            style="@style/StyleHomeRbtn"
+            android:drawableTop="@drawable/selector_main_bttom_mine_status_bar"
+            android:gravity="center"
+            android:text="我的" />
+    </RadioGroup>
+</FrameLayout>

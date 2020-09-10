@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_no_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <com.qubuyer.customview.ImageViewAutoLoad
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_150"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_184"
+        app:iva_src="@drawable/icon_order_list_no_data"
+        tools:src="@drawable/icon_order_list_no_data" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_18"
+        android:text="还没有相关订单呢～"
+        android:textColor="#999999"
+        android:textSize="@dimen/dp_12" />
+</LinearLayout>
+

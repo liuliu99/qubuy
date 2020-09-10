@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">addressPickerLib</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="send">配送至</string>
+</resources>

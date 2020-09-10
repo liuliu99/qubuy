@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/theme_color</item>
+        <item name="colorPrimaryDark">@color/theme_color</item>
+        <!--  应用中的字体默认颜色  -->
+        <item name="android:textColor">@color/black</item>
+        <!--  Toolbar的标题颜色值  -->
+        <item name="actionMenuTextColor">@color/toolbar_menu_color</item>
+        <item name="android:textColorPrimary">@color/toolbar_title_color</item>
+        <item name="editTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/toolbar_hint_text_color</item>
+        <!--<item name="editTextBackground">@drawable/edit_text_material</item>-->
+        <!--<item name="actionMenuTextAppearance">@style/ActionMenuStyle</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ActivitySplashTheme" parent="AppTheme">
+        <!-- 以下属性用于解决闪屏页白屏问题 -->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>-->
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+        <!--<item name="android:background">@android:color/transparent</item>-->
+        <!--<item name="android:windowDisablePreview">true</item>-->
+        <item name="android:windowBackground">@drawable/layer_splash</item>
+        <item name="android:windowFullscreen">true</item>
+        <!--不让windowBackground延申到navigation bar区域-->
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <!--<item name="android:windowBackground">@drawable/layer_splash</item>-->
+    </style>
+</resources>

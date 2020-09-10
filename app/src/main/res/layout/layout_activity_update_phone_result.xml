@@ -1,0 +1,30 @@
+<com.qubuyer.customview.OverSrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.qubuyer.customview.ImageViewAutoLoad
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_72"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_45"
+            app:iva_src="@drawable/icon_so_pay_selected"
+            tools:src="@drawable/icon_so_pay_selected" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_26"
+            android:text="更换成功"
+            android:textColor="#333333"
+            android:textSize="@dimen/dp_19" />
+    </LinearLayout>
+</com.qubuyer.customview.OverSrollView>

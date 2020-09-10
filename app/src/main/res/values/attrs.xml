@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageViewAutoLoad">
+        <attr name="iva_src" format="reference" />
+        <attr name="iva_circular_src" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SlideSwitch">
+        <attr name="is_open" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MineItemView">
+        <attr name="left_iv_src" format="reference" />
+        <attr name="content_text" format="string" />
+        <attr name="right_iv_src" format="reference" />
+        <attr name="show_division" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RatingbarFlexible">
+        <attr name="colorOutlineOn" format="color" />
+        <attr name="colorOutlineOff" format="color" />
+        <attr name="colorOutlinePressed" format="color" />
+        <attr name="colorFillOn" format="color" />
+        <attr name="colorFillOff" format="color" />
+        <attr name="colorFillPressedOn" format="color" />
+        <attr name="colorFillPressedOff" format="color" />
+        <attr name="polygonVertices" format="integer" />
+        <attr name="polygonRotation" format="integer" />
+        <attr name="strokeWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="EnhanceTabLayout">
+        <attr name="tab_Mode" format="enum">
+            <enum name="mode_fixed" value="1"/>
+            <enum name="mode_scrollable" value="2"/>
+        </attr>
+        <attr name="tabIndicatorColor" format="color"/>
+        <attr name="tabSelectTextColor" format="color"/>
+        <attr name="tabTextColor" format="color"/>
+        <attr name="tabIndicatorHeight" format="dimension"/>
+        <attr name="tabIndicatorWidth" format="dimension"/>
+        <attr name="tabTextSize" format="integer"/>
+    </declare-styleable>
+
+<!--    <declare-styleable name="SearchAIBarView">-->
+<!--        &lt;!&ndash; slide bar 有效内容背景 &ndash;&gt;-->
+<!--        <attr name="backgroundColor" />-->
+<!--        &lt;!&ndash; slide bar　描边 &ndash;&gt;-->
+<!--        <attr name="strokeColor" />-->
+<!--        &lt;!&ndash; slide bar 文字颜色 &ndash;&gt;-->
+<!--        <attr name="textColor" />-->
+<!--        &lt;!&ndash; slide bar　文字大小 &ndash;&gt;-->
+<!--        <attr name="textSize" />-->
+<!--        &lt;!&ndash; slide bar 选中文字颜色 &ndash;&gt;-->
+<!--        <attr name="selectTextColor" />-->
+<!--        &lt;!&ndash; slide bar 选中文字大小 &ndash;&gt;-->
+<!--        <attr name="selectTextSize" />-->
+<!--        &lt;!&ndash; slide bar　选中时候提示文字颜色 &ndash;&gt;-->
+<!--        <attr name="hintTextColor" />-->
+<!--        &lt;!&ndash; slide bar　选中时候提示文字大小 &ndash;&gt;-->
+<!--        <attr name="hintTextSize" />-->
+<!--        &lt;!&ndash; slide bar　选中时候提示圆形半径 &ndash;&gt;-->
+<!--        <attr name="hintCircleRadius" />-->
+<!--        &lt;!&ndash; slide bar　选中时候提示圆形颜色 &ndash;&gt;-->
+<!--        <attr name="hintCircleColor" />-->
+<!--        &lt;!&ndash; slide bar　选中时候波浪颜色 &ndash;&gt;-->
+<!--        <attr name="waveColor" />-->
+<!--        &lt;!&ndash; slide bar　选中时候波浪半径 &ndash;&gt;-->
+<!--        <attr name="waveRadius" />-->
+<!--        &lt;!&ndash; slide bar　里面文字上＋下padding &ndash;&gt;-->
+<!--        <attr name="contentPadding" />-->
+<!--        &lt;!&ndash; slide bar　上+下+右padding &ndash;&gt;-->
+<!--        <attr name="barPadding" />-->
+<!--        &lt;!&ndash; slide bar　宽度 &ndash;&gt;-->
+<!--        <attr name="barWidth" />-->
+<!--        &lt;!&ndash; slide bar 显示扩展数据(例如搜索城市页的当前定位,热门城市,搜索历史等等) &ndash;&gt;-->
+<!--        <attr name="barShowExtend" />-->
+<!--    </declare-styleable>-->
+
+    <declare-styleable name="switchbutton">
+        <attr format="reference|color" name="switchbackground"/>
+        <attr format="reference|color" name="switchcursor"/>
+    </declare-styleable>
+
+    <declare-styleable name="AddSubUtils">
+        <!--是否可以手动输入-->
+        <attr name="editable" format="boolean"/>
+        <!--输入框的位置-->
+        <attr name="location" format="string"/>
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="ImageWidth" format="dimension" />
+        <!-- 左右2边+-按钮的高度 -->
+        <attr name="ImageHeight" format="dimension" />
+        <!-- 中间EditText的宽度 -->
+        <attr name="contentWidth" format="dimension" />
+        <!--中间TextView的大小-->
+        <attr name="contentTextSize" format="dimension"/>
+        <!--中间字体的颜色-->
+        <attr name="contentTextColor" format="color"/>
+        <!--整个控件的background-->
+        <attr name="all_background" format="color|reference"/>
+        <!--左面控件的背景-->
+        <attr name="leftBackground" format="color|reference"/>
+        <!--右面控件的背景-->
+        <attr name="rightBackground" format="color|reference"/>
+        <!--中间控件的背景-->
+        <attr name="contentBackground" format="color|reference"/>
+        <!--左面控件的资源-->
+        <attr name="leftResources" format="color|reference"/>
+        <!--右面控件的资源-->
+        <attr name="rightResources" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SoContactView">
+        <attr format="string" name="name_title"/>
+        <attr format="string" name="name_hint_content"/>
+    </declare-styleable>
+
+    <declare-styleable name="gridPasswordView">
+        <attr name="textColorPayInput" format="color|reference" />
+        <attr name="textSizePayInput" format="dimension" />
+        <attr name="lineColorPayInput" format="color" />
+        <attr name="gridColorPayInput" format="color" />
+        <attr name="lineWidthPayInput" format="dimension" />
+        <attr name="passwordLengthPayInput" format="integer" />
+        <attr name="passwordTransformationPayInput" format="string" />
+        <attr name="passwordTypePayInput" format="enum">
+            <enum name="numberPassword" value="0" />
+            <enum name="textPassword" value="1" />
+            <enum name="textVisiblePassword" value="2" />
+            <enum name="textWebPassword" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

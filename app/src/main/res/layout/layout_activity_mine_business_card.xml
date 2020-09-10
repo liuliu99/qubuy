@@ -1,0 +1,81 @@
+<com.qubuyer.customview.OverSrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="@dimen/dp_284"
+            android:layout_height="@dimen/dp_229"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_45">
+
+            <com.qubuyer.customview.ImageViewAutoLoad
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:iva_src="@drawable/icon_mine_business_card_qr_bg"
+                tools:src="@drawable/icon_mine_business_card_qr_bg" />
+
+            <com.qubuyer.customview.ImageViewAutoLoad
+                android:id="@+id/iv_qr_code"
+                android:layout_width="@dimen/dp_106"
+                android:layout_height="@dimen/dp_106"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/dp_39"
+                android:scaleType="centerCrop"
+                tools:src="@mipmap/ic_logo" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_mine_invite_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:textColor="#FF681D"
+            android:textSize="@dimen/dp_14"
+            tools:text="我的邀请码：LCD123" />
+
+        <TextView
+            android:id="@+id/tv_share_qr_code"
+            android:layout_width="@dimen/dp_169"
+            android:layout_height="@dimen/dp_38"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_39"
+            android:background="@drawable/shape_mine_business_card_share_qr_code_btn_bg"
+            android:gravity="center"
+            android:text="分享二维码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_13" />
+
+        <TextView
+            android:id="@+id/tv_save_location"
+            android:layout_width="@dimen/dp_169"
+            android:layout_height="@dimen/dp_38"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_14"
+            android:background="@drawable/shape_mine_business_card_save_location_btn_bg"
+            android:gravity="center"
+            android:text="保存到相册"
+            android:textColor="#FF681D"
+            android:textSize="@dimen/dp_13" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_31"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_marginEnd="@dimen/dp_31"
+            android:text="您可以保存二维码到相册，或打印到您的店铺宣传材料中客户可直接扫码，您也可以分享二维码给微信好友。"
+            android:textColor="#999999"
+            android:textSize="@dimen/dp_13" />
+    </LinearLayout>
+</com.qubuyer.customview.OverSrollView>

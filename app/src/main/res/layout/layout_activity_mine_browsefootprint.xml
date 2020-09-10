@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.qubuyer.customview.ImageViewAutoLoad
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            app:iva_src="@drawable/icon_mine_no_collection"
+            tools:src="@drawable/icon_mine_no_collection" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_17"
+            android:text="您还没有浏览足迹，去逛逛吧～"
+            android:textColor="#999999"
+            android:textSize="@dimen/dp_12" />
+
+        <TextView
+            android:id="@+id/tv_go_main"
+            android:layout_width="@dimen/dp_111"
+            android:layout_height="@dimen/dp_37"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_21"
+            android:background="@drawable/shape_mine_collect_go_to_main_btn_bg"
+            android:gravity="center"
+            android:text="去逛逛"
+            android:textColor="#999999"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+</LinearLayout>

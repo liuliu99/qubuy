@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_46"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.qubuyer.customview.EnhanceTabLayout
+            android:id="@+id/etl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            app:tabIndicatorColor="@color/theme_text_color"
+            app:tabIndicatorHeight="@dimen/dp_2"
+            app:tabIndicatorWidth="@dimen/dp_15"
+            app:tabSelectTextColor="@color/theme_text_color"
+            app:tabTextColor="#ACACAC"
+            app:tabTextSize="14"
+            app:tab_Mode="mode_fixed" />
+
+        <com.qubuyer.customview.ViewPagerWrapContentHeight
+            android:id="@+id/vp_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_49"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <com.qubuyer.customview.ImageViewAutoLoad
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginEnd="@dimen/dp_11"
+        app:iva_src="@drawable/icon_login_close"
+        tools:src="@drawable/icon_login_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dp_36"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_qq_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.qubuyer.customview.ImageViewAutoLoad
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    app:iva_src="@drawable/icon_login_qq"
+                    tools:src="@drawable/icon_login_qq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ登录"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dp_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_wechat_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_41"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.qubuyer.customview.ImageViewAutoLoad
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    app:iva_src="@drawable/icon_login_wechat"
+                    tools:src="@drawable/icon_login_wechat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信登录"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dp_13" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:gravity="center"
+            android:textSize="@dimen/dp_13"
+            tools:text="未注册的手机号验证后将自动创建趣买买账号，登录即代表您已经同意《趣买买用户隐私政策》" />
+    </LinearLayout>
+</FrameLayout>

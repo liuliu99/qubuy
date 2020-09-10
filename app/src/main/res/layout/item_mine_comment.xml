@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/dp_8"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_15"
+    android:paddingBottom="@dimen/dp_15">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15">
+
+        <com.qubuyer.customview.ImageViewAutoLoad
+            android:id="@+id/iv_user_headimg"
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_42"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:iva_src="@drawable/icon_default_headimg"
+            tools:src="@drawable/icon_default_headimg" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_13"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_toEndOf="@+id/iv_user_headimg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3F4346"
+                android:textSize="@dimen/dp_13"
+                tools:text="麦***爷" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_7"
+                android:textColor="#999999"
+                android:textSize="@dimen/dp_12"
+                tools:text="2019.01.15" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_17"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:textColor="#333333"
+        android:textSize="@dimen/dp_13"
+        tools:text="性价比还是很高的，包装很结实，发货也快，安装师傅挺利索的，服务态度也很好，空调效果很好，制冷的多味道硬..." />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_image_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="#F5F5F5"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_8">
+
+        <RelativeLayout
+            android:id="@+id/rl_good_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.qubuyer.customview.ImageViewAutoLoad
+                android:id="@+id/iv_img"
+                android:layout_width="@dimen/dp_74"
+                android:layout_height="@dimen/dp_74"
+                tools:src="@mipmap/ic_logo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_74"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_toEndOf="@+id/iv_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dp_13"
+                    tools:text="格力京逸（GREE）正1.5匹 E享舒适 智能睡眠 变频 快速冷暖 壁挂式卧室空调挂机..." />
+
+                <TextView
+                    android:id="@+id/tv_good_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#444444"
+                    android:textSize="@dimen/dp_13"
+                    tools:text="￥1380.00" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

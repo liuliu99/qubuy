@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.qubuyer.customview.EnhanceTabLayout
+        android:id="@+id/etl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:tabIndicatorColor="#FF681D"
+        app:tabIndicatorHeight="@dimen/dp_2"
+        app:tabIndicatorWidth="@dimen/dp_38"
+        app:tabSelectTextColor="#FF681D"
+        app:tabTextColor="#999999"
+        app:tabTextSize="14"
+        app:tab_Mode="mode_fixed" />
+</FrameLayout>

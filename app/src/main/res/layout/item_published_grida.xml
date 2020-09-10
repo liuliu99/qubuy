@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_80"
+    android:layout_height="@dimen/dp_80"
+    android:descendantFocusability="blocksDescendants">
+
+    <com.qubuyer.customview.ImageViewAutoLoad
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:scaleType="fitXY"
+        app:iva_src="@drawable/icon_add_pic"
+        tools:src="@drawable/icon_add_pic" />
+
+    <com.qubuyer.customview.ImageViewAutoLoad
+        android:id="@+id/bt_del"
+        android:layout_width="@dimen/dp_17"
+        android:layout_height="@dimen/dp_17"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/icon_red_del"
+        android:focusable="false"
+        app:iva_src="@drawable/icon_red_del" />
+</RelativeLayout>

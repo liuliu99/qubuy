@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qubuyer.customview.OverSrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/address_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/ll_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.qubuyer.customview.ImageViewAutoLoad
+                        android:layout_width="@dimen/dp_126"
+                        android:layout_height="@dimen/dp_85"
+                        android:layout_gravity="center"
+                        android:src="@drawable/no_address"
+                        app:iva_src="@drawable/no_address" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_17"
+                        android:text="您暂时没有收货地址哦～"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dp_12" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </com.qubuyer.customview.OverSrollView>
+
+    <TextView
+        android:id="@+id/btn_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:background="@drawable/shape_rounded_rectangle_red"
+        android:gravity="center"
+        android:text="+ 新增收货地址"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_14" />
+</FrameLayout>

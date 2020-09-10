@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="add_address" type="id"/>
+    <item name="edit_phone" type="id"/>
+    <item name="edit_nickname" type="id"/>
+    <item name="editphone_next" type="id"/>
+    <item name="editphone_save" type="id"/>
+    <item name="submit_comment" type="id"/>
+</resources>
